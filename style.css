@@ -1,0 +1,1493 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+:root {
+    --primary-color: #17696A;
+    --secondary-color: #1E212C;
+    --success-color: #03CEA4;
+    --danger-color: #FF4242;
+    --text-color: #424551;
+    --white: #fff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+
+}
+
+.transparent-btn {
+    padding: 0 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    line-height: 52px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.primary-btn {
+    padding: 0px 40px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+}
+
+header {
+    width: 100%;
+}
+
+header .topbar {
+    width: 100%;
+    height: 44px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 345px;
+}
+
+header .topbar .left p {
+    font-size: 14px;
+
+    opacity: 0.6;
+    line-height: 150%;
+}
+
+header .topbar .left p span {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+header .topbar .links {
+    display: flex;
+    gap: 32px;
+}
+
+header .topbar .links a {
+    color: var(--white);
+    font-size: 14px;
+    opacity: 0.6;
+    line-height: 150%;
+}
+
+header .topbar .right {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+header .topbar .right .language span {
+    margin-left: 12px;
+    margin-right: 4px;
+    font-size: 14px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+header .topbar .right .language img {
+    cursor: pointer;
+}
+
+header .topbar .right .login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+header .topbar .right .login p {
+    font-size: 14px;
+}
+
+/* topbar end */
+
+/* navbar start */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0 345px;
+
+}
+
+.navbar .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.navbar .nav-left .logo {
+    cursor: pointer;
+}
+
+.navbar .nav-left .logo a {
+    color: var(--text-color);
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.navbar .nav-left .logo a span {
+    color: var(--primary-color);
+}
+
+.navbar .nav-left .menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar .nav-left .menu a {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.navbar .nav-left .menu :last-child {
+    color: var(--danger-color);
+}
+
+.navbar .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.navbar .nav-right .search {
+    position: relative;
+}
+
+.navbar .nav-right .search input {
+    width: 380px;
+    height: 44px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    padding: 11px 16px 12px 16px;
+}
+
+.navbar .nav-right .search img {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.navbar .nav-right .icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.navbar .nav-right .icons .heart {
+    margin-right: 8px;
+}
+
+.navbar .nav-right .icons-line {
+    width: 1px;
+    height: 22px;
+    background: linear-gradient(315deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+    margin: 0 20px;
+}
+
+.navbar .nav-right .icons .badge {
+    background-color: var(--success-color);
+    padding: 1px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+/* navbar end */
+
+/* offers */
+
+.offers {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 100%;
+
+}
+
+.offers p {
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 900;
+
+}
+
+.offers a {
+    color: var(--white);
+    font-size: 12px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.offers img {
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+/* offers end */
+
+/* home start */
+
+.home {
+    width: 100%;
+    height: 800px;
+    background-color: aqua;
+    background: url(https://bizweb.dktcdn.net/100/376/405/articles/nhuong-quyen-gia-cong-my-pham-blog-coanmy-5.jpg?v=1596804339223);
+    background-size: cover;
+
+}
+
+.home-content {
+    padding: 140px 50% 180px 345px;
+}
+
+.home-content h6 {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.home-content h1 {
+    font-size: 72px;
+    font-weight: 900;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+    line-height: 130%;
+    margin-top: 12px;
+}
+
+.home-content .home-btn {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.home-content .slider {
+    margin-top: 181px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.home-content .slider .number1 p {
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    opacity: 0.6;
+}
+
+.home-content .slider .number1 .line {
+    width: 178px;
+    height: 2px;
+    background-color: #424551;
+    margin-top: 12px;
+    opacity: 0.3;
+
+}
+
+.home-content .slider .first p {
+    opacity: 1;
+}
+
+.home-content .slider .first .line {
+    opacity: 1;
+}
+
+/* home end */
+
+/* category start */
+
+.category {
+    position: relative;
+    height: 436px;
+}
+
+.category .card-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.category .card-container p {
+    width: 390px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* products */
+
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-top: 180px;
+}
+
+.products-container .text {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.products-container .text h3 {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.products-container .text p {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    color: #808288;
+}
+
+.products-container .text a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+
+}
+
+
+.products .product .image {
+    position: relative;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.products .product .image .stars {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.products .product .image .heart {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+
+.products .product .content p {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.products .product .content h6 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.products :nth-child(2n) .stars {
+    display: none;
+}
+
+.products-container .slider-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+
+}
+
+.products-container .slider-line .yataycizgi {
+    width: 30px;
+    height: 3px;
+    background-color: #B3B7BC;
+}
+
+.products-container .slider-line :first-child {
+    background-color: var(--text-color);
+}
+
+.indirim {
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.indirim .left {
+    flex-basis: 33%;
+    background: url(https://img6.thuthuatphanmem.vn/uploads/2022/03/03/background-my-pham-nuoc-ngoai_094506619.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+}
+
+.indirim .left .left-content {
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.indirim .right {
+    flex-basis: 66%;
+    background: url(https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1550221369236-I92FTAQXXYPFW9I55BIR/29594811_2174998739193705_1522434146430021991_n.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.indirim .right .right-content {
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.indirim h6 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.indirim h3 {
+    font-size: 32px;
+    font-weight: 900;
+    width: 360px;
+    margin-bottom: 40px;
+}
+
+.indirim a {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 32px;
+}
+
+.time-container {
+    margin-top: 79px;
+
+}
+
+.time-container h3 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+}
+
+
+.time-container .row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+
+
+.time-container .row .col h6 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.time-container .row .col p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* collection start */
+
+.collection {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    gap: 16px;
+}
+
+.collection .left {
+    flex-basis: 60%;
+    background: url(https://flowerknows.co/cdn/shop/files/800.jpg?v=1693219938&width=1500);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.collection .right {
+    flex-basis: 40%;
+    background-color: #E5E8ED;
+    height: 500px;
+    position: relative;
+    z-index: 0;
+}
+
+.collection .right .coll-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.collection .right .right-content {
+    z-index: 2;
+}
+
+.collection .right .right-content,
+.collection .left .left-content {
+    padding-left: 60px;
+    padding-top: 60px;
+
+}
+
+
+.collection .right-content form {
+    z-index: 1000;
+}
+
+
+.collection h6 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.collection h3 {
+    font-size: 32px;
+    font-weight: 900;
+
+    margin-bottom: 40px;
+}
+
+.collection .left-content h3 {
+    width: 360px;
+}
+
+.collection a {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 32px;
+    z-index: 1000;
+}
+
+.right-content form {
+    z-index: 1000;
+    margin-bottom: 35px;
+}
+
+.right-content form p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 11px;
+}
+
+.right-content form .input {
+    display: flex;
+    align-items: center;
+    height: 44px;
+}
+
+.right-content form .input input {
+    width: 230px;
+    height: 44px;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.right-content form .input input::placeholder {
+    color: #9a9ca5;
+}
+
+.right-content form .input .primary-btn {
+    height: 44px;
+    padding: 0 32px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.right-content .right-content-bottom {
+    font-size: 14px;
+    color: var(--text-color);
+    width: 360px;
+}
+
+/* collection end */
+
+/* popular start */
+
+.popular {
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.popular h2 {
+    font-size: 46px;
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+
+.popular .popular-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.popular .popular-category .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    cursor: pointer;
+
+}
+
+.popular .popular-category .col p {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary-color);
+
+}
+
+/* popular end */
+
+/* trend start */
+
+.trend {
+    background-color: #E5E8ED;
+    width: 100%;
+    height: 950px;
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trend .trend-content {
+    padding: 80px 345px;
+}
+
+.trend .trend-content .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trend .trend-content .title .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.trend .trend-content .title .slider .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.trend .trend-content .title h2 {
+    color: var(--secondary-color);
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+
+.trend .trend-content .trend-products {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.trend .trend-content .trend-products .product .image {
+    background: url(https://flowerknows.co/cdn/shop/files/moonlight-mermaid_ed1e4e35-aa9a-4175-a2e0-15326eb9178e.jpg?v=1687855855&width=1500);
+    background-size: cover;
+    background-position: center;
+    width: 390px;
+    height: 440px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trend .trend-content .trend-products :nth-child(2) .image {
+    background: url(https://flowerknows.co/cdn/shop/products/3217c9139d408167907c7597d5e0597f.jpg?v=1683708251&width=1100);
+    background-size: cover;
+    background-position: center;
+}
+
+.trend .trend-content .trend-products :nth-child(3) .image {
+    background: url(https://flowerknows.co/cdn/shop/files/MoonlightMermaidAll-InGiftSet.3_720cd6f7-5250-4700-a1fe-582e7442e385.jpg?v=1698826779&width=1500);
+    background-size: cover;
+    background-position: center;
+}
+
+.trend .trend-content .trend-products .product .image .stars {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.trend .trend-content .trend-products .product .image .heart {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.trend .trend-content .trend-products .product .product-text p {
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.trend .trend-content .trend-products .product .product-text h6 {
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.trend .trend-content .trend-button {
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+.trend .trend-content .trend-button a {
+    padding: 10px 40px;
+}
+
+/* trend end */
+
+/* saleup start */
+
+.saleup {
+    padding: 100px 345px;
+}
+
+.saleup .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.saleup .title h2 {
+    font-size: 46px;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.saleup .title .slider {
+    display: flex;
+    gap: 24px;
+}
+
+.saleup .saleup-products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.saleup .saleup-products .product .image {
+    background: url(https://laz-img-sg.alicdn.com/p/c382930020a6415e6adcc54aa93858ca.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 390px;
+    height: 440px;
+    position: relative;
+    cursor: pointer;
+}
+
+.saleup .saleup-products :nth-child(2) .image {
+    background: url(https://img.lazcdn.com/g/ff/kf/Saaa22249ab31402eb4fdc8907934a662d.jpg_720x720q80.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.saleup .saleup-products :nth-child(3) .image {
+    background: url(https://flowerknows.co/cdn/shop/products/20230407_696ad1e5-945f-4c7e-9009-8ef5b543dbdf.jpg?v=1687856090&width=1500);
+    background-size: cover;
+    background-position: center;
+}
+
+.saleup .saleup-products .product .image .indirim50 {
+    display: inline;
+    background-color: var(--danger-color);
+    padding: 1px 8px;
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.saleup .saleup-products .product .image .stars {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.saleup .saleup-products .product .image .heart {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.saleup .saleup-products .product .product-content {
+    margin-top: 16px;
+    margin-left: 16px;
+
+}
+
+.saleup .saleup-products .product .product-content p {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.saleup .saleup-products .product .product-content h6 {
+    color: var(--danger-color);
+    font-weight: 700;
+    font-size: 24px;
+
+}
+
+.saleup .saleup-products .product .product-content h6 span {
+    color: #787A80;
+    font-size: 18px;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+
+.saleup .saleup-products .product .product-content .product-beden {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.saleup .saleup-products .product .product-content .product-beden .numbers {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.saleup .saleup-products .product .product-content .product-beden .numbers .number {
+    border: 1px solid #D7DADD;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.saleup .saleup-products .product .product-content .product-beden .numbers :nth-child(2) {
+    border: 1px solid var(--primary-color);
+}
+
+.saleup .saleup-products .product .product-content .product-beden .colors {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.saleup .saleup-products .product .product-content .cart-button {
+
+    margin-top: 20px;
+
+
+}
+
+.saleup .saleup-products .product .product-content .cart-button a {
+    padding: 0px 32px;
+    width: 358px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.saleup .saleup-products .product .product-content .cart-button a .cursor {
+    margin-left: 19px;
+}
+
+
+
+.saleup .saleup-button {
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+.saleup .saleup-button a {
+    padding: 10px 40px;
+}
+
+/* saleup end */
+
+/* app start */
+
+.app {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 168px;
+    background-color: var(--secondary-color);
+    height: 300px;
+
+
+}
+
+.app .app-image {
+    position: absolute;
+    bottom: 0px;
+    left: 317px;
+    height: 330px;
+}
+
+.app .app-content {
+    position: absolute;
+    top: 60px;
+    right: 345px;
+}
+
+.app .app-content p {
+    width: 600px;
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 48px;
+}
+
+.app .app-content .application {
+    display: flex;
+    gap: 24px;
+    cursor: pointer;
+}
+
+/* app end */
+
+/* services start */
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.services .row {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.services .row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .row .col h4 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.services .row .col p {
+    font-size: 16px;
+    color: #787A80;
+}
+
+.services .row .dikeycizgi {
+
+    width: 1px;
+    height: 136px;
+    background: linear-gradient(315deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+
+}
+
+/* services end */
+
+/* instagram start */
+
+.instagram {
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram .instagram-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.instagram .instagram-content .text h5 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.instagram .instagram-content .text h1 {
+    font-size: 46px;
+    font-weight: 900;
+    width: 390px;
+    margin-top: 8px;
+    margin-bottom: 60px;
+}
+
+.instagram .instagram-content .text .transparent-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.instagram .instagram-content .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+/* instagram end */
+
+/* blog start */
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.blog-content {
+    width: 1230px;
+}
+
+.blog .blog-content .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+}
+
+.blog .blog-content .title h3 {
+    font-size: 46px;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.blog .blog-content .content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.blog .blog-content .content .image {
+    background: url(https://www.legendsboutique.com.au/cdn/shop/files/MoonlightMermaidFive-ColorJewelryEyeshadowPalette-2_1200x1200.jpg?v=1683775203);
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 306px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.blog .blog-content .content :nth-child(2) .image {
+    background: url(https://cloudshopbd.com/wp-content/uploads/2023/12/Flower-Knows-Moonlight-Eyeshadow-Cloud-shop-bd.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.blog .blog-content .content .text {
+    margin: 0px 24px;
+}
+
+.blog .blog-content .content .text h6 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.blog .blog-content .content :nth-child(2) .text h6 {
+    color: var(--primary-color);
+}
+
+.blog .blog-content .content .text .meta {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    gap: 12px;
+    font-size: 14px;
+    color: #787A80;
+}
+
+.blog .blog-content .content .text .meta .line {
+    width: 1px;
+    height: 12px;
+    background: #787A80;
+}
+
+.blog .blog-content .content .text .meta .comment {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.blog .blog-content .content .text .text-bottom {
+    width: 552px;
+    color: var(--text-color);
+}
+
+/* blog end */
+
+/* brands start */
+
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+
+
+.brands .brands-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.brands .brands-image .img {
+    width: 170px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* brands end */
+
+/* subscribe start */
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 273px;
+    background-color: #F4F5F6;
+    margin-top: 84px;
+}
+
+.subscribe .img {
+    background: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/431132890_1636681393801437_7207774491310409594_n.png?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=2r1qojit9QsAX_BrkQ-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQhPjC5nKaHtPdjQxh2djTo5xjsLozMywhO9sOgSe4slA&oe=661CD94A);
+    background-position: center;
+    background-size: cover;
+    width: 461px;
+    height: 416px;
+    margin-top: 65px;
+
+}
+
+.subscribe .text h2 {
+    font-size: 46px;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.subscribe .text .title-p {
+    font-size: 20px;
+    color: #787A80;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.subscribe .text .checkboxes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+
+}
+
+.subscribe .text .checkboxes div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5.5px 16px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    color: #787A80;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.subscribe .text .checkboxes :nth-child(3) {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.subscribe .text form p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 11px;
+}
+
+.subscribe .text form .input {
+    display: flex;
+    align-items: center;
+    height: 44px;
+}
+
+.subscribe .text form .input input {
+    width: 344px;
+    height: 44px;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.subscribe .text form .input input::placeholder {
+    color: #9a9ca5;
+}
+
+.subscribe .text form .input .primary-btn {
+    height: 44px;
+    padding: 0 32px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.subscribe .text .checkinput {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.subscribe .text .checkinput input {
+    width: 16px;
+    height: 16px;
+
+}
+
+.subscribe .text .checkinput p {
+    color: var(--text-color);
+}
+
+footer {
+    width: 100%;
+    background-color: #1E212C;
+    padding: 60px 345px 32px 345px;
+}
+
+footer .footer-top {
+    display: flex;
+    gap: 155px;
+}
+
+footer .footer-top .col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .footer-top .col h6 {
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+footer .footer-top .col a {
+    color: var(--white);
+    font-size: 16px;
+    opacity: 0.6;
+    width: 130px;
+}
+
+footer .footer-top .col p {
+    color: var(--white);
+    font-size: 16px;
+}
+
+footer .footer-top .col p span {
+    opacity: 0.6;
+}
+
+footer .footer-top .col .social {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+footer .footer-top .col .social .icons {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .footer-top .col .application {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+
+footer .footer-line {
+    width: 100%;
+    height: 1px;
+    opacity: 0.15;
+    background-color: #fff;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+footer .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    color: var(--white);
+
+}
+
+footer .footer-bottom a {
+    color: var(--white);
+}
+
+
+footer .footer-bottom span {
+    margin: 0 4px;
+}
